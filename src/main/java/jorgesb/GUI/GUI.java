@@ -112,6 +112,7 @@ public class GUI {
         out.writeUTF(usuario);
         out.writeUTF(contraseña);
         String validate = in.readUTF();
+        System.out.println(validate);
         if (validate.equals("ok")) {
             clientelogueado();
         } else {
