@@ -11,6 +11,7 @@ import java.io.IOException;
 import java.net.Socket;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import jorgesb.GUI.GUI;
 import jorgesb.Utils.Utils;
 
 /**
@@ -21,32 +22,25 @@ public class app {
 
     public static void main(String[] args) {
         //Host del servidor
-        final String HOST = "172.16.16.157";
+        final String HOST = "192.168.100.4";
         //Puerto del servidor
         final int PUERTO = 10578;
-        DataInputStream in;
-        DataOutputStream out;
+        
 
         try {
             //Creo el socket para conectarme con el cliente
             Socket sc = new Socket(HOST, PUERTO);
 
-            in = new DataInputStream(sc.getInputStream());
-            out = new DataOutputStream(sc.getOutputStream());
+           
+            GUI.principal(sc);
 
-            String nombre = Utils.getString("Introduce tu login: ");
-            String correo = Utils.getString("Introduce tu contraseña: ");
+            
 
-            //Envio un mensaje al cliente
-            out.writeUTF(nombre);
-            out.writeUTF(correo);
+            
 
-            //Recibo el mensaje del servidor
-            String mensaje = in.readUTF();
+           
 
-            System.out.println(mensaje);
-
-            sc.close();
+            
 
         } catch (IOException ex) {
             Logger.getLogger(app.class.getName()).log(Level.SEVERE, null, ex);
