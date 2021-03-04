@@ -193,7 +193,7 @@ public class GUI {
     static void opciones_operarioinit(int numero) throws IOException {
         switch (numero) {
             case 1:
-                Iniciar_sesionC(1);
+                Iniciar_sesionO(1);
                 break;
 
             case 0:
