@@ -37,8 +37,8 @@ public class GUI {
                 System.out.println("\n+-------------------+");
                 System.out.println("|        Menu       |");
                 System.out.println("+-------------------+");
-                System.out.println("| 1) Cliente |");
-                System.out.println("| 2) Operario |");
+                System.out.println("| 1) Cliente        |");
+                System.out.println("| 2) Operario       |");
                 System.out.println("| 0) Salir          |");
                 System.out.println("+-------------------+");
 
@@ -74,7 +74,7 @@ public class GUI {
         do {
 
             System.out.println("\n+-------------------+");
-            System.out.println("|        Cliente       |");
+            System.out.println("|      Cliente      |");
             System.out.println("+-------------------+");
             System.out.println("| 1) Iniciar sesion |");
             System.out.println("| 0) Salir          |");
@@ -128,14 +128,14 @@ public class GUI {
 
         do {
             Scanner teclado = new Scanner(System.in);
-            System.out.println("\n+-------------------+");
-            System.out.println("|        Bienvenido       |");
-            System.out.println("+-------------------+");
+            System.out.println("\n+------------------------------------------+");
+            System.out.println("|               Bienvenido                 |");
+            System.out.println("+------------------------------------------+");
             System.out.println("| 1) Ver el saldo de la cuenta del cliente |");
-            System.out.println("| 2) Sacar dinero de la cuenta  |");
-            System.out.println("| 3) Ingresar dinero en la cuenta |");
-            System.out.println("| 0) Salir          |");
-            System.out.println("+-------------------+");
+            System.out.println("| 2) Sacar dinero de la cuenta             |");
+            System.out.println("| 3) Ingresar dinero en la cuenta          |");
+            System.out.println("| 0) Salir                                 |");
+            System.out.println("+------------------------------------------+");
 
             numero = Utils.getInt("Introduce una opción: ");
             out.writeUTF(numero + "");
@@ -179,7 +179,7 @@ public class GUI {
         do {
             Scanner teclado = new Scanner(System.in);
             System.out.println("\n+-------------------+");
-            System.out.println("|      Operario       |");
+            System.out.println("|      Operario     |");
             System.out.println("+-------------------+");
             System.out.println("| 1) Iniciar sesion |");
             System.out.println("| 0) Salir          |");
@@ -234,16 +234,16 @@ public class GUI {
 
         do {
             Scanner teclado = new Scanner(System.in);
-            System.out.println("\n+-------------------+");
-            System.out.println("|        Bienvenido       |");
-            System.out.println("+-------------------+");
+            System.out.println("\n+------------------------------------------+");
+            System.out.println("|               Bienvenido                 |");
+            System.out.println("+------------------------------------------+");
             System.out.println("| 1) Ingresar un nuevo usuario en el banco |");
-            System.out.println("| 2) Crear una nueva cuenta bancaria  |");
-            System.out.println("| 3) Ver los datos de una cuenta bancaria |");
-            System.out.println("| 4) Ver los datos de un cliente |");
-            System.out.println("| 5) Eliminar una cuenta bancaria  |");
-            System.out.println("| 0) Salir          |");
-            System.out.println("+-------------------+");
+            System.out.println("| 2) Crear una nueva cuenta bancaria       |");
+            System.out.println("| 3) Ver los datos de una cuenta bancaria  |");
+            System.out.println("| 4) Ver los datos de un cliente           |");
+            System.out.println("| 5) Eliminar una cuenta bancaria          |");
+            System.out.println("| 0) Salir                                 |");
+            System.out.println("+------------------------------------------+");
 
             numero = Utils.getInt("Introduce una opción: ");
             out.writeUTF(numero + "");
