@@ -202,7 +202,7 @@ public class GUI {
 			System.out.println("Introduzca sus Apellidos: ");
 			String apellidos = teclado.next();
 			out.writeUTF(apellidos);
-			System.out.println("Introduzca su Fecha de nacimiento: ");
+			System.out.println("Introduzca su Fecha de nacimiento (AAAA-MM-DD): ");
 			String fnacimiento = teclado.next();
 			out.writeUTF(fnacimiento);
 			System.out.println("Introduzca su Telefono: ");
