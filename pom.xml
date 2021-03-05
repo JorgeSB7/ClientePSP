@@ -28,7 +28,6 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>com.alberto.apirestfulservice.AppMain</mainClass>
                             <mainClass>jorgesb.App.app</mainClass>
                         </manifest>
                     </archive>
