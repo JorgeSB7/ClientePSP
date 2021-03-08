@@ -25,22 +25,10 @@ public class app {
         final String HOST = "192.168.100.4";
         //Puerto del servidor
         final int PUERTO = 10578;
-        
-
         try {
             //Creo el socket para conectarme con el cliente
             Socket sc = new Socket(HOST, PUERTO);
-
-           
             GUI.principal(sc);
-
-            
-
-            
-
-           
-
-            
 
         } catch (IOException ex) {
             Logger.getLogger(app.class.getName()).log(Level.SEVERE, null, ex);
