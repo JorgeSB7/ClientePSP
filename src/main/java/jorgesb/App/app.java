@@ -22,7 +22,9 @@ public class app {
 
     public static void main(String[] args) {
         //Host del servidor
-        final String HOST = "192.168.100.4";
+        //final String HOST = "192.168.100.4";
+        final String HOST = "127.0.0.1";
+
         //Puerto del servidor
         final int PUERTO = 10578;
         try {
